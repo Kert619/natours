@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #02d18c;
+  --color-white: #fff;
+  --color-blue: #4071f4;
+  --color-dark: #2a2a2e;
+  --color-primary-gradient-600: linear-gradient(
+    rgba(2, 209, 140, 0.6),
+    rgba(2, 209, 140, 0.6)
+  );
+  --color-primary-gradient-700: linear-gradient(
+    rgba(2, 209, 140, 0.7),
+    rgba(2, 209, 140, 0.7)
+  );
+
+  --shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  --swiper-navigation-size: clamp(1.5rem, 2vw, 2rem);
+  --swiper-theme-color: var(--color-blue);
+}
+
+/* Base styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Spectral", serif;
+  color: var(--color-primary);
+}
+
+/* Carousel */
+.carousel-caption {
+  max-width: 1320px;
+}
+
+/* Forms */
+
+/* Header navigation */
+
+#main-nav {
+  background-color: var(--color-primary);
+  min-height: 75px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.navbar__logo-text {
+  letter-spacing: 3px;
+  font-family: "Crimson Text", serif;
+}
+
+.navbar__link {
+  padding-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.navbar__link:hover {
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+.navbar__link--active {
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+.btn-light {
+  color: var(--color-primary);
+}
+
+.btn-light:hover {
+  background-color: transparent;
+  border: 1.5px solid var(--color-white);
+  color: var(--color-white) !important;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(2, 195, 154, 0.4), rgba(2, 195, 154, 0.4)),
+    url(./images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 75px;
+  height: clamp(430px, 33vw, 600px);
+}
+
+.hero__title span:nth-child(2) {
+  display: block;
+}
+
+.hero__title span:last-child {
+  color: var(--color-primary);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline-light {
+  color: var(--color-white);
+  border: 1.5px solid var(--color-white);
+}
+
+.btn-outline-light:hover {
+  color: var(--color-primary);
+}
+
+.hero__images {
+  position: relative;
+}
+
+.hero__fig {
+  width: min(20vw, 350px);
+  border: 5px solid var(--color-white);
+  position: absolute;
+  transition: transform 0.3s ease-in;
+}
+
+.hero__fig:first-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -100%);
+}
+
+.hero__fig:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -35%);
+}
+.hero__fig:last-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -10%);
+}
+
+.hero__fig:first-child:hover {
+  transform: translate(-60%, -100%) scale(1.1);
+  z-index: 1;
+}
+
+.hero__fig:nth-child(2):hover {
+  transform: translate(0, -35%) scale(1.1);
+  z-index: 1;
+}
+
+.hero__fig:last-child:hover {
+  transform: translate(-80%, -10%) scale(1.1);
+  z-index: 1;
+}
+
+/* Why choose natours */
+
+.card-choose__icon {
+  color: var(--color-primary);
+}
+
+.card-choose__title {
+  color: var(--color-primary);
+}
+
+/* Popular Tours */
+
+.card-tours__img {
+  height: clamp(200px, 15vw, 250px);
+}
+
+.card-tours__title {
+  background: var(--color-primary-gradient-700);
+}
+
+.card-tours__price {
+  background: var(--color-primary-gradient-600);
+}
+
+.card-tours__img-1 {
+  background: var(--color-primary-gradient-600), url(./images/img-6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-tours__img-2 {
+  background: var(--color-primary-gradient-600), url(./images/img-7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-tours__img-3 {
+  background: var(--color-primary-gradient-600), url(./images/img-8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-tours .fa-circle-check {
+  color: var(--color-primary);
+}
+
+.card-tours__footer {
+  background: var(--color-primary-gradient-700);
+}
+
+/* Carousel places */
+
+.carousel-places__img {
+  object-fit: cover;
+  background-position: center;
+  filter: brightness(25%);
+  height: clamp(430px, 33vw, 600px);
+}
+
+/* Testimonial */
+
+.testimonial-container {
+  position: relative;
+}
+
+.testimonial-container .swiper-button-prev {
+  position: absolute;
+  left: -1vw;
+}
+
+.testimonial-container .swiper-button-next {
+  position: absolute;
+  right: -1vw;
+}
+
+.testimonial-container .swiper-pagination {
+  position: absolute;
+  bottom: -30px !important;
+}
+
+.card-testimonial {
+  box-shadow: var(--shadow);
+}
+
+.card-testimonial__header {
+  background-color: var(--color-blue);
+  height: clamp(150px, 15vw, 200px);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    57% 100%,
+    50% 90%,
+    43% 100%,
+    0 100%
+  );
+}
+
+.card-testimonial__img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* gallery Modal */
+
+.gallery-modal__thumbnail {
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.gallery-modal__thumbnail.active img {
+  filter: brightness(40%);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-dark);
+}
+
+.footer-nav__link {
+  transition: color 0.1s ease-in;
+}
+
+.footer-nav__link:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Meda Queries */
+
+@media screen and (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}

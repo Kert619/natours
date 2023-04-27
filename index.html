@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Natours | Where life happens</title>
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font-awesome/all.min.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3 fixed-top" id="main-nav">
+      <div class="container">
+        <a href="#" class="navbar-brand navbar__logo fs-3 text-white"
+          ><i class="fa fa-leaf me-3 navbar__logo-image"></i
+          ><span class="navbar__logo-text text-uppercase">Natours</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar__links"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar__links">
+          <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+            <li class="nav-item me-3 navbar__item">
+              <a
+                href="#"
+                class="nav-link navbar__link navbar__link--active text-white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-3 navbar__item">
+              <a href="#tours" class="nav-link navbar__link text-white"
+                >Popular Tours</a
+              >
+            </li>
+            <li class="nav-item me-3 navbar__item">
+              <a
+                href="#carousel-places"
+                class="nav-link navbar__link text-white"
+                >Places to go</a
+              >
+            </li>
+            <li class="nav-item me-3 navbar__item">
+              <a href="#about-us" class="nav-link navbar__link text-white"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-0 ms-lg-5 mb-4 mb-lg-0">
+            <a
+              class="btn btn-light px-4 py-2 rounded-pill text-uppercase"
+              data-bs-toggle="modal"
+              data-bs-target="#book-now-modal"
+            >
+              Book Now
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid hero" id="hero">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6">
+            <div
+              class="hero__content text-white h-100 d-flex flex-column align-items-center align-items-md-start justify-content-center text-center text-md-start"
+            >
+              <h1 class="hero__title mb-4 display-2">
+                <span class="text-white">Tour</span>
+                <span class="text-white">Expert in</span>
+                <span>Philippines</span>
+              </h1>
+
+              <p class="hero__text mb-4">
+                A place where you can have an intimate bond with nature
+              </p>
+
+              <button
+                class="btn btn-outline-light px-4 py-2 rounded-pill text-uppercase hero__cta"
+              >
+                Discover Tours
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-none d-md-block">
+            <div class="hero__images w-100 h-100">
+              <figure class="figure hero__fig shadow">
+                <img
+                  src="./images/img-4.jpg"
+                  alt="gallery with clouds and river"
+                  class="img-fluid hero__img"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="figure hero__fig shadow">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Sea on the sunset"
+                  class="img-fluid hero__img"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="figure hero__fig shadow">
+                <img
+                  src="./images/img-5.jpg"
+                  alt="Girl on top of the gallery"
+                  class="img-fluid hero__img"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid choose py-5 bg-body-secondary" id="choose">
+      <h2 class="text-center text-uppercase my-3 my-xxl-5 choose__heading">
+        Why choose Natours
+      </h2>
+
+      <div class="container">
+        <div class="row g-4 mb-5 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card card-choose h-100 shadow border-0">
+              <div class="card-body py-4">
+                <p class="text-center card-choose__icon">
+                  <i class="fa-regular fa-lightbulb fs-1"></i>
+                </p>
+                <h5 class="card-title text-center fw-bold card-choose__title">
+                  Discover the posibilities
+                </h5>
+                <p class="card-text text-center card-choose__text">
+                  With nearly half a million attractions, hotels & more, you're
+                  sure to find joy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card card-choose h-100 shadow border-0">
+              <div class="card-body py-4">
+                <p class="text-center card-choose__icon">
+                  <i class="fa-regular fa-money-bill-1 fs-1"></i>
+                </p>
+                <h5 class="card-title text-center fw-bold card-choose__title">
+                  Enjoy deals & delights
+                </h5>
+                <p class="card-text text-center card-choose__text">
+                  Quality activities. Great prices. Plus, earn natours credits
+                  to save more.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card card-choose h-100 shadow border-0">
+              <div class="card-body py-4">
+                <p class="text-center card-choose__icon">
+                  <i class="fa-solid fa-person-walking-luggage fs-1"></i>
+                </p>
+                <h5 class="card-title text-center fw-bold card-choose__title">
+                  Exploring made easy
+                </h5>
+                <p class="card-text text-center card-choose__text">
+                  Book last minute, skip lines & get free cancellation for
+                  easier exploring.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card card-choose h-100 shadow border-0">
+              <div class="card-body py-4">
+                <p class="text-center card-choose__icon">
+                  <i class="fa-regular fa-face-smile fs-1"></i>
+                </p>
+                <h5 class="card-title text-center fw-bold card-choose__title">
+                  Travel you can trust
+                </h5>
+                <p class="card-text text-center card-choose__text">
+                  Read reviews & get reliable customer support. We're with you
+                  at every step.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid tours py-5 bg-white" id="tours">
+      <h2 class="text-center text-uppercase my-3 my-xxl-5 tours__heading">
+        Popular Tours
+      </h2>
+
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+            <div class="card card-tours h-100 shadow border-0 overflow-hidden">
+              <div
+                class="card-img-top card-tours__img card-tours__img-1 position-relative"
+              >
+                <p
+                  class="card-tours__price d-inline-block text-white py-1 px-2"
+                >
+                  Php 30, 000
+                </p>
+                <div
+                  class="text-uppercase fs-2 lh-sm position-absolute bottom-0 end-0 m-3 d-flex flex-column align-items-end text-white"
+                >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >The sea</span
+                  >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >explorer</span
+                  >
+                </div>
+              </div>
+
+              <div class="card-body px-md-4 pb-0">
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4 card-"></i>
+                  <p class="m-0">3 days tour</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Up to 30 people</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">2 tour guides</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Sleep in cozy hotel</p>
+                </div>
+              </div>
+
+              <div class="card-footer text-center py-3 card-tours__footer">
+                <button
+                  class="btn btn-outline-light px-4 py-2 rounded-pill text-uppercase"
+                  data-bs-toggle="modal"
+                  data-bs-target="#book-now-modal"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+            <div class="card card-tours h-100 shadow border-0 overflow-hidden">
+              <div
+                class="card-img-top card-tours__img card-tours__img-2 position-relative"
+              >
+                <p
+                  class="card-tours__price d-inline-block text-white py-1 px-2"
+                >
+                  Php 40, 000
+                </p>
+                <div
+                  class="text-uppercase fs-2 lh-sm position-absolute bottom-0 end-0 m-3 d-flex flex-column align-items-end text-white"
+                >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >The forest</span
+                  >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >hiker</span
+                  >
+                </div>
+              </div>
+
+              <div class="card-body px-md-4 pb-0">
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4 card-"></i>
+                  <p class="m-0">7 days tour</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Up to 40 people</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">6 tour guides</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Sleep in provided tents</p>
+                </div>
+              </div>
+
+              <div class="card-footer text-center py-3 card-tours__footer">
+                <button
+                  class="btn btn-outline-light px-4 py-2 rounded-pill text-uppercase"
+                  data-bs-toggle="modal"
+                  data-bs-target="#book-now-modal"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+            <div class="card card-tours h-100 shadow border-0 overflow-hidden">
+              <div
+                class="card-img-top card-tours__img card-tours__img-3 position-relative"
+              >
+                <p
+                  class="card-tours__price d-inline-block text-white py-1 px-2"
+                >
+                  Php 50, 000
+                </p>
+                <div
+                  class="text-uppercase fs-2 lh-sm position-absolute bottom-0 end-0 m-3 d-flex flex-column align-items-end text-white"
+                >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >The island</span
+                  >
+                  <span class="card-tours__title d-inline-block px-2 fw-light"
+                    >adventurer</span
+                  >
+                </div>
+              </div>
+
+              <div class="card-body px-md-4 pb-0">
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4 card-"></i>
+                  <p class="m-0">10 days tour</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Up to 15 people</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">3 tour guides</p>
+                </div>
+                <div class="mb-3 d-flex gap-3">
+                  <i class="fa-regular fa-circle-check fs-4"></i>
+                  <p class="m-0">Sleep in provided tents</p>
+                </div>
+              </div>
+
+              <div class="card-footer text-center py-3 card-tours__footer">
+                <button
+                  class="btn btn-outline-light px-4 py-2 rounded-pill text-uppercase"
+                  data-bs-toggle="modal"
+                  data-bs-target="#book-now-modal"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="carousel slide carousel-places"
+      id="carousel-places"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel-places"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-places"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-places"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/img-10.jpg"
+            alt="gallery"
+            class="d-block w-100 carousel-places__img"
+            loading="lazy"
+          />
+          <div
+            class="carousel-caption top-0 d-flex flex-column justify-content-center gap-2 mx-auto"
+          >
+            <h1 class="text-uppercase text-white">Discover the hidden world</h1>
+            <p>
+              Mt. Apo (Davao) The highest in the country and undeniably the best
+              gallery to hike in the Philippines.
+            </p>
+            <button
+              class="btn btn-primary carousel-places__btn carousel-places__btn--gallery align-self-center border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#gallery-modal"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./images/img-2.jpg"
+            alt="Beach"
+            class="d-block w-100 carousel-places__img"
+            loading="lazy"
+          />
+          <div
+            class="carousel-caption top-0 d-flex flex-column justify-content-center gap-2 mx-auto"
+          >
+            <h1 class="text-uppercase text-white">Relax and go to beach</h1>
+            <p>
+              Boracay Island, one of the top beaches in the Philippines and is
+              blessed with a long stretch of powdery white sand beach, crystal
+              clear and azure waters, and a stunning sunset.
+            </p>
+            <button
+              class="btn btn-primary carousel-places__btn carousel-places__btn--beach align-self-center border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#gallery-modal"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./images/img-9.jpg"
+            alt="Island"
+            class="d-block w-100 carousel-places__img"
+            loading="lazy"
+          />
+          <div
+            class="carousel-caption top-0 d-flex flex-column justify-content-center gap-2 mx-auto"
+          >
+            <h1 class="text-uppercase text-white">
+              It’s a big world out there - explore!
+            </h1>
+            <p>
+              Siargao, a tear-dropped island at the northeastern tip of
+              Mindanao, is best known for being the Philippines' Surfing
+              Capital.
+            </p>
+            <button
+              class="btn btn-primary carousel-places__btn carousel-places__btn--island align-self-center border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#gallery-modal"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-places"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-places"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-fluid py-5 bg-body-secondary" id="testimonial">
+      <h2 class="text-center text-uppercase my-3 my-xxl-5 testimonial__heading">
+        What our clients think
+      </h2>
+      <div class="container testimonial-container">
+        <div class="swiper swiper-testimonial">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-1.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Helen D. Curren"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Helen D. Curren
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "Booking my trips through this nature traveling website has
+                    been a game-changer for me. As a busy professional, I don't
+                    always have the time to plan and organize my own travel
+                    itinerary. But with this website, I can easily browse
+                    through a variety of options and find the perfect adventure
+                    that fits my schedule and budget."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-2.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Billy A. Vickers"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Billy A. Vickers
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "I stumbled upon this nature traveling website and it's been
+                    a game changer for me! As someone who loves to explore new
+                    places and appreciate the beauty of nature, this website has
+                    given me so many amazing options for trips that I never
+                    would have found on my own. The descriptions and photos of
+                    each destination are so vivid and detailed, it's like I'm
+                    already there."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-3.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Emily T. Lewis"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Emily T. Lewis
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "The website provided me with an endless array of
+                    destinations to explore, from the towering gallerys of the
+                    Rockies to the pristine beaches of the Caribbean. Thanks to
+                    this website, I have experienced some of the most
+                    breathtaking sights that nature has to offer, and I am
+                    forever grateful for the memories that I have created."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-4.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Ida S. Ashley"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Ida S. Ashley
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "I have been a frequent traveler for many years, but I have
+                    never felt as connected to the world around me as I do now
+                    that I have discovered this nature traveling website. The
+                    website has opened my eyes to the incredible natural wonders
+                    that exist all over the world, and I have had the
+                    opportunity to visit places that I never would have even
+                    known about otherwise."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-5.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Carey H. Anderson"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Carey H. Anderson
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "I recently used this nature traveling website to plan a
+                    trip with my family to Yellowstone National Park, and I
+                    couldn't be happier with the experience. The website
+                    provided us with all the information we needed to make the
+                    most of our time there, from the best hiking trails to the
+                    best times to view the wildlife."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-1 h-auto">
+              <div class="card card-testimonial h-100 border-0">
+                <div
+                  class="card-header border-0 card-testimonial__header d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./images/person-6.jpg"
+                    class="card-testimonial__img rounded-circle"
+                    alt="Steven M. Adkins"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center card-testimonial__name">
+                    Steven M. Adkins
+                  </p>
+
+                  <p class="card-testimonial__comment text-center small">
+                    "I was initially hesitant to book my trip through a nature
+                    traveling website, but I am so glad that I did! The
+                    website's knowledgeable guides helped me to plan the perfect
+                    itinerary, complete with hikes, wildlife sightings, and
+                    stunning natural vistas. Not only did I have an amazing
+                    adventure, but I also learned so much about the ecosystems
+                    and conservation efforts in the areas that I visited."
+                  </p>
+                </div>
+
+                <div class="card-footer border-0">
+                  <div class="card-testimonial__rating">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-white" id="about-us">
+      <h2 class="text-center text-uppercase my-3 my-xxl-5 about-us__heading">
+        About us
+      </h2>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <p class="lh-lg">
+              Welcome to Natours, where we aim to promote the beauty and
+              importance of the natural world. Our website is dedicated to
+              providing you with informative and inspiring content about the
+              environment, wildlife, conservation, and sustainable living. We
+              believe that nature is essential for our physical and mental
+              well-being, and we are committed to raising awareness about the
+              importance of preserving and protecting our natural resources. Our
+              team consists of passionate individuals who share a love for
+              nature and a common goal of promoting environmental awareness.
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="lh-lg">
+              Through our website, we hope to inspire and educate people of all
+              ages about the wonders of nature and the vital role it plays in
+              sustaining life on our planet. Whether you are a seasoned outdoor
+              enthusiast or a city dweller looking to connect with nature, our
+              website has something for everyone. We provide a wide range of
+              content, including articles, blogs, videos, and photographs, that
+              cover a variety of topics such as wildlife conservation, climate
+              change, eco-friendly living, outdoor recreation, and much more.
+              Our aim is to engage and inspire people to take action to protect
+              and preserve our natural world for future generations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid footer">
+      <div class="container">
+        <div class="row text-white gx-lg-5 gy-4 py-4">
+          <div class="col-12 col-md-6 col-xxl-5">
+            <h4 class="text-white">Newsletter</h4>
+            <p>
+              Want to know what we're up to? Sign up for the newsletter and join
+              our tribe.
+            </p>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control rounded-0 shadow-none border-0 p-2"
+                  placeholder="Enter Email"
+                  required
+                />
+                <button class="btn btn-primary rounded-0 border-0">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-3 offset-xxl-1">
+            <h4 class="text-white">Address</h4>
+            <p class="small">
+              <i class="fa-solid fa-location-dot fs-5 me-2"></i>
+              Hernaez St, Bacolod, 6100 Negros Occidental
+            </p>
+            <h4 class="text-white">Contact</h4>
+            <p class="small">
+              <i class="fa-solid fa-phone fs-5 me-2"></i> Tel: +40 753 353
+            </p>
+            <p class="small">
+              <i class="fa-solid fa-envelope fs-5 me-2"></i> Email:
+              natourstravel@gmail.com
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <h4 class="text-white">Follow Us</h4>
+            <nav class="nav gap-3 footer-nav">
+              <a
+                href="https://www.facebook.com"
+                class="nav-link p-0 text-white footer-nav__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook fs-3"></i
+              ></a>
+              <a
+                href="https://www.twitter.com"
+                class="nav-link p-0 text-white footer-nav__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-twitter fs-3"></i
+              ></a>
+              <a
+                href="https://www.instagram.com"
+                class="nav-link p-0 text-white footer-nav__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram fs-3"></i
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="book-now-modal">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-0">
+            <p class="modal-title w-100 text-center fs-3">Explore The World</p>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body px-5 pb-4">
+            <form class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-sm shadow-none rounded-0"
+                  id="name"
+                  required
+                />
+                <div class="invalid-feedback">This is a required field</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-sm shadow-none rounded-0"
+                  id="email"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a valid email</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="contact" class="form-label">Mobile No.</label>
+                <input
+                  type="text"
+                  class="form-control form-control-sm shadow-none rounded-0"
+                  pattern="^(09|\+639)\d{9}$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid mobile number
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control form-control-sm shadow-none rounded-0"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">This is a required field</div>
+              </div>
+
+              <div class="form-check form-check-inline mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="group"
+                  id="small-group"
+                  required
+                />
+                <label for="small-group" class="form-check-label"
+                  >Small Group</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="group"
+                  id="large-group"
+                />
+                <label for="large-group" class="form-check-label"
+                  >Large Group</label
+                >
+              </div>
+
+              <div class="row justify-content-end">
+                <div class="col-auto">
+                  <button class="btn btn-primary rounded-0" type="submit">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade gallery-modal"
+      id="gallery-modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body position-relative">
+            <div class="gallery-modal__image h-100 w-100">
+              <img
+                class="object-fit-cover h-100 w-100"
+                src="./images/mountain-1.jpg"
+                loading="lazy"
+              />
+            </div>
+
+            <button
+              class="btn btn-light gallery-modal__btn-prev position-absolute top-50 ms-4 translate-middle-y start-0"
+            >
+              &#10094;
+            </button>
+            <button
+              class="btn btn-light gallery-modal__btn-next position-absolute top-50 me-4 translate-middle-y end-0"
+            >
+              &#10095;
+            </button>
+          </div>
+          <div class="modal-footer">
+            <div
+              class="gallery-modal__thumbnail-container d-flex justify-content-center w-100 gap-2"
+            >
+              <div class="gallery-modal__thumbnail active">
+                <img
+                  src="./images/mountain-1-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-2-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-3-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-4-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-5-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-6-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/mountain-7-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-1-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-2-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-3-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-4-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-5-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-6-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="gallery-modal__thumbnail">
+                <img
+                  src="./images/beach-7-lq.jpg"
+                  class="w-100 h-100 object-fit-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./form-validation.js"></script>
+    <script src="./gallery.js"></script>
+  </body>
+</html>
